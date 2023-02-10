@@ -42,7 +42,7 @@ export default function WordsPerMinute() {
      
     return (
         <div style={{display:"flex", flexDirection: "column", gap: 12, textAlign: "center"}}>        
-        <h1 style={{fontSize: 48}}>{word}</h1>
+        { Boolean(time) && <h1 style={{fontSize: 48}}>{word}</h1>}
         <h2>Characters types {characterCount}</h2>
         <h2>Remaining time {time}</h2>
         {
