@@ -33,7 +33,7 @@ export default function MemoTest() {
 
     useEffect(() => {
         if( guessed.length == IMAGES.length ) {
-            alert('Ganaste Cerdo !!');
+            alert('Ganaste !!');
             setTimeout(() => setGuessed([]), 1500);
         }
     }, [guessed]);
@@ -63,9 +63,7 @@ export default function MemoTest() {
                     selected.includes(image) || guessed.includes(image) 
                     ? <img key={image} src={url}/> 
                     : <img key={image} src="https://icongr.am/clarity/search.svg?size=128&color=currentColor" />
-                }
-
-                  
+                }                  
                 </li>
             )})
         }
